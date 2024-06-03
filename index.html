@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <h3 class="brand">the weather</h3>
+            <div class="update">
+                <h1 class="temp">42&#176;</h1>
+                <div class="city-time">
+                    <h1 class="name">Delhi</h1>
+                    <small>
+                        <span class="time">06:09</span>
+                        -
+                        <span class="date">Sunday June 2</span>
+                    </small>
+                </div>
+                <div class="weather">
+                    <img src="./weather/weather/64x64/day/143.png" class="icon" alt="icon">
+                    <span class="condition">Cloudy</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <form id="locationInput">
+                <input type="text" class="search" placeholder="Search Location">
+                <button type="submit" class="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <ul class="cities">
+                <li class="city">Mumbai</li>
+                <li class="city">Kolkata</li>
+                <li class="city">Dehradun</li>
+                <li class="city">Bengaluru</li>
+            </ul>
+            <ul class="details">
+                <h4>Weather Details</h4>
+                <li>
+                    <span>Cloud</span>
+                    <div>
+                        <i class="fa-solid fa-cloud"></i>
+                        <span class="cloud">89%</span>
+                    </div>
+                    
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <div>
+                        <i class="fa-solid fa-water"></i>
+                        <span class="humidity">64%</span>
+                    </div>
+                </li>
+                <li>
+                    <span>Wind</span>
+                    <div>
+                        <i class="fa-solid fa-wind"></i>
+                        <span class="wind">8km/h</span>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
