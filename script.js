@@ -1,4 +1,4 @@
-const BASE_URL = new URL("http://api.weatherapi.com/v1");
+const BASE_URL = new URL("https://api.weatherapi.com/v1");
 const html = document.querySelector("html");
 const app = document.querySelector(".weather-app");
 const temp = document.querySelector(".temp");
