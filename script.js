@@ -100,10 +100,10 @@ const updateBackground = (weather) => {
     if (code === 1000) {  // Clear
         app.style.backgroundImage = `url(${timeOfDay}/clear.jpg)`;
         btn.style.background = timeOfDay === "day" ? "#e5ba92" : "#181e27";
-    } else if ([1003, 1006, 1009, 1030, 1069, 1087, 1135, 1273, 1279, 1282].includes(code)) {  // Cloudy
+    } else if ([1003, 1006, 1009, 1030, 1069, 1087, 1135, 1279, 1282].includes(code)) {  // Cloudy
         app.style.backgroundImage = `url(${timeOfDay}/cloudy.jpg)`;
         btn.style.background = timeOfDay === "day" ? "#fa6d1b" : "#181e27";
-    } else if ([1063, 1069, 1072, 1150, 1180, 1183, 1186, 1189, 1192, 1195, 1204, 1207, 1240, 1243, 1246, 1249, 1276, 1252].includes(code)) {  // Rainy
+    } else if ([1063, 1069, 1072, 1150,1153,1168,1171, 1180, 1183, 1186, 1189, 1192, 1195,1198,1201, 1204, 1207, 1240, 1243, 1246, 1249,1273, 1276, 1252].includes(code)) {  // Rainy
         app.style.backgroundImage = `url(${timeOfDay}/rainy.jpg)`;
         btn.style.background = timeOfDay === "day" ? "#647d75" : "#325c80";
     } else {  // Snowy or other weather
